@@ -51,5 +51,17 @@ Solution 3:
 
 Solution 4:
 ->Simillar to solution 3 but here the min form the left is maintained and subtracted with each variable to it's right and the max difference is returned.
-
+class Solution {
+    public int maxProfit(int[] prices) {
+        int n=prices.length-1;
+        int min=prices[0];
+        int maxProfit=0,profit=0;
+        for(int i=1;i<=n;i++){
+            if(prices[i]<min) min=prices[i];
+            profit=prices[i]-min;
+            maxProfit=Math.max(profit,maxProfit);
+        }
+        return maxProfit;
+    }
+}
  */
