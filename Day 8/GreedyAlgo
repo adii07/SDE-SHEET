@@ -1,0 +1,3 @@
+consider the solution which appears to be the best among the available solution at a given moment.
+
+Greedy questions are mostly sorted the data is linear,ie, if we encounter a value we are assured that we won't encounter a larger value.
